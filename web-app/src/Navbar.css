@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;  
+    }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#330000 ; 
+    position: sticky;
+    top: 0;
+   
+    }
+
+
+
+.logo{
+    width: 5%;
+    height:5%;
+}
+    
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+
+.navbar ul li  {
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    margin: 0 15px;
+    }
+
+  
+  .link a {
+    display: block; 
+    color: white; 
+    text-decoration: none; 
+    padding: 14px 20px; 
+    transition: background-color 0.3s; 
+  }
+  .link a:hover {
+    background-color: #73605B; 
+    border-radius: 70%;
+  }
+  
+
+  
+   

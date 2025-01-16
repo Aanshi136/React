@@ -1,0 +1,43 @@
+/* html {
+    overflow: hidden;
+} */
+section {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+ 
+}
+
+box {
+  flex: 0.5;
+  background-color:#73605B;
+  padding: 5px;
+}
+
+.box_h1{
+    color:yellow;
+    text-align: center;
+}
+
+.box_p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: aliceblue;
+}
+
+box2 {
+    flex: 0.5;
+    position: relative; 
+    padding: 0; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+  }
+  
+  .box2_image {
+    width: 100%;
+    height: 100%;
+  }
