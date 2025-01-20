@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import './Navbar.css';
 import HomePg from './HomePg';
@@ -9,61 +10,30 @@ import About from './About';
 import './About.css';
 import Contact from './Contact';
 import './Contact.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <>
-        <Navbar />
-        <HomePg />
-        <Service />
-        <About />
-        <Contact />
-      </>
-    ),
-  },
-  {
-    path: "/Home",
-    element: (
-      <>
-        <Navbar />
-        <HomePg />
-      </>
-    ),
-  },
-  {
-    path: "/Service",
-    element: (
-      <>
-        <Navbar />
-        <Service />
-      </>
-    ),
-  },
-  {
-    path: "/About",
-    element: (
-      <>
-        <Navbar />
-        <About />
-      </>
-    ),
-  },
-  {
-    path: "/Contact",
-    element: (
-      <>
-        <Navbar />
-        <Contact />
-      </>
-    ),
-  },
-]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HomePg />
+              <Service />
+              <About />
+              <Contact />
+            </>
+          }  
+        />
+        <Route path="/HomePg" element={<HomePg />} />
+        <Route path="/Service" element={<Service />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
