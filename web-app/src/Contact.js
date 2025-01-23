@@ -5,7 +5,6 @@ import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 const Contact = () => {
   return (
     <div className="container">
-      {/* Form Section */}
       <div className="form-section">
         <form>
           <h3>Get in Touch With Us</h3>

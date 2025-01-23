@@ -7,7 +7,7 @@ import './HomePg.css';
 import Service from './Service';
 import './Service.css';
 import About from './About';
-import './About.css';
+
 import Contact from './Contact';
 import './Contact.css';
 
@@ -37,3 +37,4 @@ function App() {
 }
 
 export default App;
+

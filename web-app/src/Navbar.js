@@ -2,8 +2,6 @@ import React from "react";
 import palaceImage from "./logo.png";
 import { Link } from 'react-router-dom'; 
 
-
-
 const Navbar = () => {
 
   return (

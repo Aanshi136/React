@@ -1,6 +1,6 @@
-
 import React from 'react';
 import palaceImage from './palace.jpg'; 
+import './About.css';
 
 
 function About() {
@@ -27,3 +27,6 @@ function About() {
 }
 
 export default About;
+
+
+
