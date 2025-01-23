@@ -17,8 +17,8 @@
     width: 2.17in;
     height: 2.62in;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: space-between; /* Distribute space */
+    flex-direction: column; 
+    justify-content: space-between; 
   }
   
   .card-image {
